@@ -49,3 +49,8 @@ Thumbs.db
 *.wmv
 
 storage/projects.json
+.nuxt
+exports
+.windsurf
+.output
+node_modules
