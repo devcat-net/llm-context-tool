@@ -7,7 +7,8 @@ export default defineEventHandler(async (event: H3Event<EventHandlerRequest>) =>
     
     return {
       success: true,
-      projects: storage.projects
+      projects: storage.projects,
+      codebaseRules: storage.codebaseRules
     }
   } catch (error: any) {
     console.error('Load projects error:', error)

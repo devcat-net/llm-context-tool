@@ -30,7 +30,7 @@ export const useCodebaseRulesStore = defineStore('codebaseRules', {
         }
         
         const data = await response.json()
-        this.rules = data.codebaseRules.map((r: any) => ({
+        this.rules = (data.codebaseRules || []).map((r: any) => ({
           ...r,
           createdAt: new Date(r.createdAt),
           updatedAt: new Date(r.updatedAt)
